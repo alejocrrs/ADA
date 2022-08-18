@@ -21,9 +21,6 @@ def conjunto_potencia(c):
 def combinaciones(lista, r = None):
     if r is None:
         r = len(lista)
-    #filtrar el conjunto potencia por el valor r (opcion 1)
-    #return list(filter(lambda x: (len(x)==r), conjunto_potencia(lista))) 
-    #filtrar el conjunto potencia por el valor r (opcion 2)
     return [p for p in conjunto_potencia(lista) if(len(p)==r)]        
 
 def filtrar_minimo_2_mujeres(combinaciones):
@@ -46,7 +43,42 @@ def filtrar_minimo_2_mujeres(combinaciones):
                 mujeres += 1
         if mujeres >= 2:
             lista_filtrada.append(lista_personas)
-    return lista_filtrada     
+    return lista_filtrada
+
+def filtrar_solo_hombres(combinaciones):
+    lista_filtrada = []
+    for lista_personas in combinaciones:
+        hombres = 0
+        for persona in lista_personas:
+            if persona.genero == "M":
+                hombres += 1
+        if hombres == len(lista_personas):
+            lista_filtrada.append(lista_personas)
+    return lista_filtrada
+
+def filtrar_aaron(combinaciones):
+    lista_filtrada = []
+    for lista_personas in combinaciones:
+        hombres = 0
+        for persona in lista_personas:
+            if persona.genero == "M":
+                hombres += 1
+        if hombres == len(lista_personas):
+            lista_filtrada.append(lista_personas)
+    return lista_filtrada
+
+def filtrar_aaron_con_nivel_bajo(combinaciones):
+    lista_inicial = filtrar_aaron(combinaciones)
+    lista_filtrada = []
+    
+    for lista_personas in combinaciones:
+        personas_nivel_bajo = 0
+        for persona in lista_personas:
+            if persona.nombre != "Aaron" and persona.ingles == "B":
+                personas_nivel_bajo += 1
+        if personas_nivel_bajo == 2:
+            lista_filtrada.append(lista_personas)
+    return lista_filtrada
 
 def nombres_personas(personas):
     lista_grande_personas = []
@@ -57,8 +89,27 @@ def nombres_personas(personas):
         lista_grande_personas.append(lista_personas)
     return lista_grande_personas
 
-
 def main():
+    import time
+    
+    def p1():
+        tiempo_inicial = time.time()
+        [print(f"<{n+1}> {lista}") for n, lista in enumerate(nombres_personas(filtrar_minimo_2_mujeres(combinaciones_3)))]
+        tiempo_final = time.time()
+        print(f"TIEMPO DE EJECUCIÓN: {tiempo_final - tiempo_inicial}")
+        
+    def p2():
+        tiempo_inicial = time.time()
+        [print(f"<{n+1}> {lista}") for n, lista in enumerate(nombres_personas(filtrar_solo_hombres(combinaciones_3)))]
+        tiempo_final = time.time()
+        print(f"TIEMPO DE EJECUCIÓN: {tiempo_final - tiempo_inicial}")
+    
+    def p3():
+        tiempo_inicial = time.time()
+        [print(f"<{n+1}> {lista}") for n, lista in enumerate(nombres_personas(filtrar_aaron_con_nivel_bajo(combinaciones_3)))]
+        tiempo_final = time.time()
+        print(f"TIEMPO DE EJECUCIÓN: {tiempo_final - tiempo_inicial}")
+    
     personas = [
         Persona("Ana", "F", "A"),
         Persona("Aaron", "M", "A"),
@@ -75,6 +126,27 @@ def main():
     
     combinaciones_3 = combinaciones(personas, 3)
     
-    print(nombres_personas(filtrar_minimo_2_mujeres(combinaciones_3)))
-    
+    while(True):
+        print(
+            "\n=== OPCIONES ===\n",
+            "[1] Grupos con mínimo dos mujeres\n",
+            "[2] Grupos exclusivos de hombres\n",
+            "[3] Grupos donde Aaron se relacione con personas con nivel de inglés 'Bajo'\n",
+            "[0] SALIR\n",
+              )
+        opcion = int(input("Ingresa una opción: "))
+        
+        if(opcion == 1):
+            p1()
+        elif(opcion == 2):
+            p2()
+        elif(opcion == 3):
+            p3()
+        elif(opcion == 0):
+            print("FINALIZANDO...")
+            break
+        else:
+            print("[!] Opción inválida.")
+
+           
 main()
