@@ -131,7 +131,7 @@ def main():
             "\n=== OPCIONES ===\n",
             "[1] Grupos con mínimo dos mujeres\n",
             "[2] Grupos exclusivos de hombres\n",
-            "[3] Grupos donde Aaron se relacione con personas con nivel de inglés 'Bajo'\n",
+            "[3] Grupos donde Aaron se relacione con dos personas con nivel de inglés 'Bajo'\n",
             "[0] SALIR\n",
               )
         opcion = int(input("Ingresa una opción: "))
