@@ -59,11 +59,11 @@ def filtrar_solo_hombres(combinaciones):
 def filtrar_aaron(combinaciones):
     lista_filtrada = []
     for lista_personas in combinaciones:
-        hombres = 0
+        aaron = False
         for persona in lista_personas:
-            if persona.genero == "M":
-                hombres += 1
-        if hombres == len(lista_personas):
+            if persona.nombre == "Aaron":
+                aaron = True
+        if aaron is True:
             lista_filtrada.append(lista_personas)
     return lista_filtrada
 
@@ -71,7 +71,7 @@ def filtrar_aaron_con_nivel_bajo(combinaciones):
     lista_inicial = filtrar_aaron(combinaciones)
     lista_filtrada = []
     
-    for lista_personas in combinaciones:
+    for lista_personas in lista_inicial:
         personas_nivel_bajo = 0
         for persona in lista_personas:
             if persona.nombre != "Aaron" and persona.ingles == "B":
