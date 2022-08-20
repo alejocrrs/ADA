@@ -99,9 +99,7 @@ def main():
         print(f"Duración: {duracion}")
     
     i = 1
-    n = 1000
-    #n = 10000
-    #n = 100000
+    n = 100000
     
     print(
         "\n=== OPCIONES ===\n",
