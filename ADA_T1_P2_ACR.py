@@ -108,8 +108,8 @@ def main():
         "[1] Bloque de código 1\n",
         "[2] Bloque de código 2\n",
         "[3] Bloque de código 3\n",
-        "[3] Bloque de código 4\n",
-        "[3] Bloque de código 5\n",
+        "[4] Bloque de código 4\n",
+        "[5] Bloque de código 5\n",
         "[0] SALIR\n",
           )
     
