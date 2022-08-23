@@ -8,50 +8,34 @@ import matplotlib.pyplot as grafico
 
 def main():
     
-    def p1(i, n):
+    def p1():
         tiempos = []
-        
-        while (i < n):
-            tinicial = time.time()
-            
-            print(i)
-            i += 1
-            
+        tinicial = time.time()
+        for n in range(1,10000):
+            i = 0
+            while (i < n):
+                print(n, i)
+                i += 1
+                
             tfinal = time.time()
             duracion = tfinal - tinicial
             tiempos.append(duracion)
-            
+                
         grafico.plot(tiempos)
         print(f"Duración: {duracion}")
             
         
-    def p2(i, n):
+    def p2():
         tiempos = []
-        
-        while (i < n):
-            tinicial = time.time()
-            
-            c = i
-            while (c > 0):
-                print(i)
-                c /= 2
-            i += 1
-            
-            tfinal = time.time()
-            duracion = tfinal - tinicial
-            tiempos.append(duracion)
-            
-        grafico.plot(tiempos)
-        print(f"Duración: {duracion}")
-    
-    def p3(i, n):
-        tiempos = []
-        
-        while (i < n):
-            tinicial = time.time()
-            
-            print(i)
-            i = i * 2
+        tinicial = time.time()
+        for n in range(1,1000):
+            i = 0
+            while (i < n):
+                c = i
+                while (c > 0):
+                    print(n, i)
+                    c /= 2
+                i += 1
             
             tfinal = time.time()
             duracion = tfinal - tinicial
@@ -60,17 +44,37 @@ def main():
         grafico.plot(tiempos)
         print(f"Duración: {duracion}")
     
-    def p4(i, n):
+    def p3():
         tiempos = []
+        tinicial = time.time()
         
-        while (i < n):
-            tinicial = time.time()
+        for n in range(1,10000000):
+            i = 1
+            while (i < n):
+                
+                print(n, i)
+                i = i * 2
+                
+            tfinal = time.time()
+            duracion = tfinal - tinicial
+            tiempos.append(duracion)
             
-            j = 1
-            while (j < n):
-                print(i)
-                j += 1
-            i += 1
+        grafico.plot(tiempos)
+        print(f"Duración: {duracion}")
+    
+    def p4():
+        tiempos = []
+        tinicial = time.time()
+        
+        for n in range(1,1000):
+            i = 0
+            while (i < n):
+                
+                j = 1
+                while (j < n):
+                    print(n, i)
+                    j += 1
+                i += 1
             
             tfinal = time.time()
             duracion = tfinal - tinicial
@@ -79,17 +83,19 @@ def main():
         grafico.plot(tiempos)
         print(f"Duración: {duracion}")
     
-    def p5(i, n):
+    def p5():
         tiempos = []
+        tinicial = time.time()
         
-        while (i < n):
-            tinicial = time.time()
-            
-            j = 1
-            while (j < n):
-                print(i)
-                j = j * 2
-            i += 1
+        for n in range(1,1000):
+            i = 1
+            while (i < n):
+                
+                j = 1
+                while (j < n):
+                    print(n, i)
+                    j = j * 2
+                i += 1
             
             tfinal = time.time()
             duracion = tfinal - tinicial
@@ -97,9 +103,6 @@ def main():
             
         grafico.plot(tiempos)
         print(f"Duración: {duracion}")
-    
-    i = 1
-    n = 100000
     
     print(
         "\n=== OPCIONES ===\n",
@@ -113,15 +116,15 @@ def main():
     
     opcion = int(input("Ingresa una opción: "))
     if(opcion == 1):
-        p1(i, n)
+        p1()
     elif(opcion == 2):
-        p2(i, n)
+        p2()
     elif(opcion == 3):
-        p3(i, n)
+        p3()
     elif(opcion == 4):
-        p4(i, n)
+        p4()
     elif(opcion == 5):
-        p5(i, n)
+        p5()
     elif(opcion == 0):
         print("FINALIZANDO...")
     else:
