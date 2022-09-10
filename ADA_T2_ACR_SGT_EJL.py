@@ -11,7 +11,7 @@ def ejercicio_1c(n):
     if n == 1:
         return 1
     else:
-        return ejercicio_1c(n-1) + (3*n) -2
+        return ejercicio_1c(n-1) + (3*n) - 2
 
 def ejercicio_1d(n):
     if n == 1:
