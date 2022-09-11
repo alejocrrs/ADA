@@ -24,7 +24,7 @@ def ejercicio_3(meses):
         if years == 0:
             return 3500000
         else:
-            return recursion_years(years-1) + (recursion_years(years - 1) * 0.0271)
+            return recursion_years(years-1) * 1.0271
     
     return recursion_years(meses//12)
         
