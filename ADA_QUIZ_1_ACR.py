@@ -14,16 +14,27 @@ def punto1():
     
     
 def punto2():
-    def a(n):
+    def a1(n): # Calculando interes mensual
         saldo = 110000
         for x in range(1,n+1):
             abono = 20000
             saldo += abono
-            interes = saldo * 0.0104 # Interes anual de 0.125
+            interes = saldo * 0.0104166667 # Interes mensual de un interes anual de 0.125
             saldo += interes # Se incrementa el interes
         return saldo
+    
+    def a2(n): # Calculando interes anual
+        saldo = 110000
+        for x in range(1,n+1):
+            abono = 20000
+            saldo += abono
+            if x % 12 == 0:
+                interes = saldo * 0.125 # Interes anual de 0.125
+                saldo += interes # Se incrementa el interes
+        return saldo
             
-    print(f"[2] Dinero en la fiducia tras 6 años: {round(a(72), 2)}")
+    print(f"[2.1] Dinero en la fiducia tras 6 años (interés mensual): {round(a1(72), 2)}")
+    print(f"[2.2] Dinero en la fiducia tras 6 años (interés anual): {round(a2(72), 2)}")
    
 punto1()
 punto2()
