@@ -1,0 +1,115 @@
+PARA LA LISTA 'data' CON 5461 ELEMENTOS:
+    # Bubble: 4.53858 (Antes: False | Después: True)
+    # Insertion: 3.48548 (Antes: False | Después: True)
+    # Selection: 1.19669 (Antes: False | Después: True)
+    # Quick: 0.21992 (Antes: False | Después: True) [PRIMEROS 2000 ELEMENTOS]
+    # Merge: 0.12304 (Antes: False | Después: True)
+    # Heap: 0.09509 (Antes: False | Después: True)
+    # Counting: 0.03483 (Antes: False | Después: True)
+    # Radix: 0.04304 (Antes: False | Después: True)
+
+PARA LA LISTA 'data0' CON 11 ELEMENTOS:
+  [!] ERROR: La lista tiene valores que no son enteros
+
+PARA LA LISTA 'data1' CON 11 ELEMENTOS:
+  [!] ERROR: La lista tiene valores que no son enteros
+
+PARA LA LISTA 'data2' CON 11 ELEMENTOS:
+    # Bubble: 0.0 (Antes: True | Después: True)
+    # Insertion: 0.0 (Antes: True | Después: True)
+    # Selection: 0.0 (Antes: True | Después: True)
+    # Quick: 0.0 (Antes: True | Después: True)
+    # Merge: 0.0 (Antes: True | Después: True)
+    # Heap: 0.0 (Antes: True | Después: True)
+    # Counting: 0.0 (Antes: True | Después: True)
+    # Radix: 0.0 (Antes: True | Después: True)
+
+PARA LA LISTA 'data3' CON 888 ELEMENTOS:
+    # Bubble: 0.12299 (Antes: False | Después: True)
+    # Insertion: 0.05948 (Antes: False | Después: True)
+    # Selection: 0.03639 (Antes: False | Después: True)
+    # Quick: 0.01327 (Antes: False | Después: True)
+    # Merge: 0.0 (Antes: False | Después: True)
+    # Heap: 0.0 (Antes: False | Después: True)
+    # Counting: 0.0 (Antes: False | Después: True)
+    # Radix: 0.0 (Antes: False | Después: True)
+
+PARA LA LISTA 'data4' CON 999 ELEMENTOS:
+    # Bubble: 0.12819 (Antes: False | Después: True)
+    # Insertion: 0.15637 (Antes: False | Después: True)
+    # Selection: 0.08717 (Antes: False | Después: True)
+    # Quick: 0.0 (Antes: False | Después: True)
+    # Merge: 0.02447 (Antes: False | Después: True)
+    # Heap: 0.0 (Antes: False | Después: True)
+    # Counting: 0.0 (Antes: False | Después: True)
+    # Radix: 0.0 (Antes: False | Después: True)
+
+PARA LA LISTA 'data5' CON 100 ELEMENTOS:
+    # Bubble: 0.0 (Antes: False | Después: True)
+    # Insertion: 0.0 (Antes: False | Después: True)
+    # Selection: 0.0021 (Antes: False | Después: True)
+    # Quick: 0.0 (Antes: False | Después: True)
+    # Merge: 0.0 (Antes: False | Después: True)
+    # Heap: 0.00167 (Antes: False | Después: True)
+    # Counting: 0.0 (Antes: False | Después: True)
+    # Radix: 0.0 (Antes: False | Después: True)
+
+PARA LA LISTA 'data6' CON 30 ELEMENTOS:
+    # Bubble: 0.0 (Antes: False | Después: True)
+    # Insertion: 0.0 (Antes: False | Después: True)
+    # Selection: 0.0 (Antes: False | Después: True)
+    # Quick: 0.0 (Antes: False | Después: True)
+    # Merge: 0.0 (Antes: False | Después: True)
+    # Heap: 0.001 (Antes: False | Después: True)
+    # Counting: 0.0 (Antes: False | Después: True)
+    # Radix: 0.001 (Antes: False | Después: True)
+
+PARA LA LISTA 'data7' CON 444 ELEMENTOS:
+    # Bubble: 0.02324 (Antes: False | Después: True)
+    # Insertion: 0.05527 (Antes: False | Después: True)
+    # Selection: 0.04901 (Antes: False | Después: True)
+    # Quick: 0.00376 (Antes: False | Después: True)
+    # Merge: 0.00645 (Antes: False | Después: True)
+    # Heap: 0.0 (Antes: False | Después: True)
+    # Counting: 0.0 (Antes: False | Después: True)
+    # Radix: 0.0 (Antes: False | Después: True)
+
+PARA LA LISTA 'data8' CON 999 ELEMENTOS:
+    # Bubble: 0.16449 (Antes: False | Después: True)
+    # Insertion: 0.09785 (Antes: False | Después: True)
+    # Selection: 0.12756 (Antes: False | Después: True)
+    # Quick: 0.02089 (Antes: False | Después: True)
+    # Merge: 0.01484 (Antes: False | Después: True)
+    # Heap: 0.01565 (Antes: False | Después: True)
+    # Counting: 0.0 (Antes: False | Después: True)
+    # Radix: 0.00747 (Antes: False | Después: True)
+
+PARA LA LISTA 'data9' CON 11111 ELEMENTOS:
+    # Bubble: 22.15209 (Antes: False | Después: True)
+    # Insertion: 14.33511 (Antes: False | Después: True)
+    # Selection: 8.18464 (Antes: False | Después: True)
+    # Quick: 0.0187 (Antes: False | Después: True) [PRIMEROS 2000 ELEMENTOS]
+    # Merge: 0.09282 (Antes: False | Después: True)
+    # Heap: 0.13367 (Antes: False | Después: True)
+    # Counting: [!] ERROR: Lista con enteros negativos
+    # Radix: [!] ERROR: Lista con enteros negativos
+
+PARA LA LISTA 'data10' CON 6775 ELEMENTOS:
+    # Bubble: 0.0 (Antes: True | Después: True)
+    # Insertion: 0.00697 (Antes: True | Después: True)
+    # Selection: 3.54477 (Antes: True | Después: True)
+    # Quick: 0.9194 (Antes: True | Después: True) [PRIMEROS 2000 ELEMENTOS]
+    # Merge: 0.05632 (Antes: True | Después: True)
+    # Heap: 0.06619 (Antes: True | Después: True)
+    # Counting: 0.0 (Antes: True | Después: True)
+    # Radix: 0.03131 (Antes: True | Después: True)
+
+PARA LA LISTA 'data11' CON 6776 ELEMENTOS:
+    # Bubble: 5.09203 (Antes: False | Después: True)
+    # Insertion: 0.0 (Antes: False | Después: True)
+    # Selection: 4.2506 (Antes: False | Después: True)
+    # Quick: 1.04635 (Antes: False | Después: True) [PRIMEROS 2000 ELEMENTOS]
+    # Merge: 0.07811 (Antes: False | Después: True)
+    # Heap: 0.19039 (Antes: False | Después: True)
+    # Counting: 0.0 (Antes: False | Después: True)
+    # Radix: 0.04685 (Antes: False | Después: True)
