@@ -1,15 +1,14 @@
 import math
 
 
-def generateMatrix(code, rows, columns):
-    listcode = list(code)
-    matrix = []
-    [matrix.append([""] * columns) for r in range(rows)]
+def generateMatrix(text, rows, columns):
+    text = list(text)
+    matrix = [["" for c in range(columns)] for r in range(rows)]
     
     for r in range(rows):
         for c in range(columns):
-            if len(listcode) > 0:
-                matrix[r][c] = listcode.pop(0)
+            if len(text) > 0:
+                matrix[r][c] = text.pop(0)
     return matrix
 
 
@@ -25,8 +24,8 @@ def interpretMatrix(matrix, rows, columns):
 
 
 def encryption(s):
-    code = s.replace(" ", "")
-    L = len(code)
+    text = s.replace(" ", "")
+    L = len(text)
     rL = math.sqrt(L)
     
     if rL % 1 == 0:
@@ -41,7 +40,7 @@ def encryption(s):
             columns = math.ceil(rL)
             
     
-    matrix = generateMatrix(code, rows, columns)
+    matrix = generateMatrix(text, rows, columns)
     return interpretMatrix(matrix, rows, columns)
     
     
