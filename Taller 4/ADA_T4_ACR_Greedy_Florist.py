@@ -6,4 +6,4 @@ def getMinimumCost(k, c):
     return costo
 
 
-print(getMinimumCost(3, [2,5,6]))
+print(getMinimumCost(3, [1,3,5,7,9]))
